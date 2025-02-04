@@ -60,3 +60,10 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+
+  deploy-hml:
+    # Dependencies of this job
+    needs: build
+    uses: lalsilva/pipeline_templates/.github/workflows/demo-deploy.yml@main
+    with:
+      variavel-demo: "Demo Dev"
