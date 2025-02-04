@@ -37,6 +37,6 @@ jobs:
   deploy-dev:
     # Dependencies of this job
     needs: build
-    uses: lalsilva/pipeline_templates/.github/workflows/demo-deploy.yml@main
+    uses: amagafa-TECH/pipeline_templates/.github/workflows/demo-deploy.yml@main
     with:
       variavel-demo: "Demo Dev"
